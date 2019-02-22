@@ -199,6 +199,68 @@
             }
         }
 
+        .fotos{
+            display:flex;
+            margin: 10px;
+            padding: 4px;
+        }
+
+        .gallery{
+            flex-direction: column;
+        }
+
+        #menuvalg {
+            display:flex;
+            flex-direction: column;
+
+
+
+        }
+        .menuerne{
+          /*height: 12vw;
+             border: 10px;
+            border-radius: 5%;
+            box-shadow: rgba(0, 0, 0, .35) 0 1rem 1rem 0;
+            border-radius: .1rem;
+            font-family: "helvetica";
+            background-color: yellow;
+            padding: 5px 7px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 2px 20px;
+            cursor: pointer;*/
+
+        }
+        button {
+             box-shadow: rgba(0, 0, 0, .35) 0 1rem 1rem 0;
+             border-radius: 1rem;
+            background-color: yellow;
+            height:10vw;
+            border:10px;
+            margin: .3rem 1rem;
+
+        }
+
+        ugemenuer{
+            display:flex;
+            flex-direction: column;
+
+        }
+
+        .ugens{
+            flex: auto;
+            background-color: white;
+            flex-direction: column;
+            padding: 6px;
+            margin: 20px;
+            border-radius: 2rem;
+            border: 20px;
+            border-color: yellow;
+            width: 350px;
+            font-family:cursive;
+        }
+
 
         #popup {
             top: 0;
@@ -262,25 +324,68 @@
   <div class="box f">om de gule veste</div>
 </div>
 
-        <div id="popup">
-            <div id="luk">
-                <button> Luk </button>
-            </div>
-            <div id="indhold"></div>
+        <section class="fotos">
+           <div class="gallery"><img src="Scallops.jpg" alt="scallops"></div>
+            <div class="gallery"><img src="germanriesling.jpg" alt="hvidvin"></div>
+            <div class="gallery"><img src="frølår.jpg" alt="frølår"></div>
+            <div class="gallery"><img src="redwine1.jpg" alt="rødvin"></div>
+            <div class="gallery"><img src="cremebrulee.jpg" alt="creme brulee"></div>
+        </section>
+
+        <section id="menuvalg">
+        <div class="menuerne">
+        <center><button class="menuerne">150 kr</button>
+        <button class="menuerne">200 kr</button>
+        <button class="menuerne">300 kr</button></center></div>
+        <div class="alacarde">
+        <center><button>a la carde</button>
+        <button>Marie Antoinettes kagebord</button></center></div>
+
+        </section>
+        <section id="ugemenuer">
+        <h1>Menuerne</h1>
+        <h3><center>Vi kan  tilbyde  pragtfulde menuer til uhørt lav pris.</center></h3>
+        <div class="ugens menu150">
+            <img src="menu150.jpg" alt="menulogo">
+            Delikat løgsuppe. <br>
+           Iskold hvidvin fra carmaque<br>
+            Coq au vin<br>
+           1984 Rolier Bourdaux <br>
+           kaffe<br>
+            Bon Apetit<br>
         </div>
-        <h1></h1>
-        <nav class="menu">
-            <button class="valgt filter" data-hold="alle">Alle</button>
-            <button class="filter" data-hold="forretter">Entrees</button>
-            <button class="filter" data-hold="hovedretter">Main</button>
-            <button class="filter" data-hold="desserter">Dessert</button>
+        <div class="ugens menu200">
+           <img src="menu200.jpg" alt="menulogo">
+              Delikat løgsuppe. <br>
+           Iskold hvidvin fra carmaque<br>
+            Coq au vin<br>
+           1984 Rolier Bourdaux <br>
+            Klassiske franske citrontærte
+         Kaffe med Petit four<br>
+            Bon Apetit<br>
+
+        </div>
+        <div class="ugens menu300">
+           <img src="menu300.jpg" alt="menulogo">
+            Ægte fransk aperitif og lidt snacks <br>
+                  Delikat løgsuppe. <br>
+                  Udsøgt kammusling
+           Iskold hvidvin fra carmaque<br>
+            Coq au vin<br>
+           1984 Rolier Bourdaux <br>
+            Klassiske franske citrontærte
+            Dessertvin
+         Kaffe med Petit four<br>
+
+            Bon Apetit<br>
+        </div>
+
+        </section>
 
 
-            <button class="filter" data-hold="sideorders">Drikke</button>
-        </nav>
     </header>
 
-    <div id="liste"></div>
+
 
     <footer>
 <section id="bookbord">
