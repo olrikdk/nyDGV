@@ -1,8 +1,8 @@
 body{
-            background-color: white;
+
               margin: 0;
             padding: 0;
-        background-color: #f3f5bb;
+        background-color: #fdfab2;
         }
 
         /* body * {
@@ -51,9 +51,12 @@ body{
 		background-color: white;
 		color: black;
 		border-radius: 5px;
+        border-color: #f4dc54;
+       border-style: solid;
+        border-width: 10px;
 		padding: 1px 2px;
         margin: 3px;
-		font-size: 100%;
+font-size: 85%;
         font-family: helvetica;
 
 	}
@@ -67,17 +70,8 @@ body{
 	.c {
 		grid-area: 1 / 3 / 2 / 4;
 	}
-  @media only screen and (max-width:600px) {
-            .wrapper {
-             grid-template-columns: 1fr;
-            }
-        }
 
-
-
-
-
-         #liste {
+      #liste {
             display: grid;
             grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr);
             margin: 0 auto;
@@ -102,6 +96,7 @@ body{
             color: black;
             text-align: left;
             font-family: "Helvetica";
+            font-size: 36px;
         }
         h3 {
             font-size: 24px;
@@ -186,8 +181,8 @@ body{
         @media only screen and (min-width:800px) {
             #banner {
                background-image: url("banner4.jpg");
-                width: 1300px;
-            height: 180px;
+                width: 1250px;
+            height: 185px;
             }
         }
 
@@ -207,19 +202,21 @@ body{
         #menuvalg {
             display:flex;
             flex-direction: row;
+            align-items: center;
+
         }
 
         .menuerne
-{
-          height: 12vw;
+
+          {
+              height: 12vw;
              border: 10px;
             border-radius: 1rem;
             box-shadow: rgba(10, 10, 10, 10) 0 1rem 1rem 0;
             font-family: "helvetica";
-            background-color: yellow;
             padding: .5px .5px;
             text-align: center;
-              font-size: 30px;
+              font-size: 24px;
             margin: 2px 2px;
             cursor: pointer;
 
@@ -227,9 +224,10 @@ body{
         button {
              box-shadow: rgba(0, 0, 0, .35) 0 1rem 1rem 0;
              border-radius: 1rem;
+            align-items: center;
             background-color: yellow;
             height:5vw;
-            width:17vw;
+            min-width:17vw;
             border:10px;
             margin: .3rem 3rem;
 
@@ -237,7 +235,7 @@ body{
 
         #ugemenuer{
             display:flex;
-            flex-direction: row;
+            flex-direction: column;
 
         }
 
@@ -253,6 +251,17 @@ body{
             border-color: yellow;
             width: 350px;
             font-family:cursive;
+        }
+ @media only screen and (min-width:700px) {
+            #ugemenuer {
+               flex-direction: row;
+            }
+        }
+
+        @media only screen and (min-width:768px) {
+            #ugemenuer {
+                flex-direction: row;
+            }
         }
 
 
